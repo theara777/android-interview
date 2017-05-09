@@ -9,6 +9,20 @@ package com.stablekernel.interview.api.model;
         * Any number of skills.
  */
 
+import java.util.List;
+
 public final class Profile {
     // TODO: implement me
+
+    public String getName() {
+        return null;
+    }
+
+    public double getProgress() {
+        return 0;
+    }
+
+    public List<String> getSkills() {
+        return null;
+    }
 }

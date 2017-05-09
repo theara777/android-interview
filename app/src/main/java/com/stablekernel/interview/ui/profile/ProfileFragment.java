@@ -43,12 +43,14 @@ public final class ProfileFragment extends Fragment {
 
     public static ProfileFragment newInstance(Profile profile) {
         // TODO: implement me
+        return null;
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // TODO: inflate the layout fragment_profile.xml and return the resulting view
+        return null;
     }
 
     @Override

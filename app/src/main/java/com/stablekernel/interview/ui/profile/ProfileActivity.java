@@ -31,7 +31,8 @@ public final class ProfileActivity extends AppCompatActivity {
 
     public static void start(Context context, Profile profile) {
         Intent profileIntent = new Intent(context, ProfileActivity.class);
-        profileIntent.putExtra(EXTRA_PROFILE, profile);
+        // TODO: you'll want to uncomment this.  it's commented so that we can compile before we get here
+//        profileIntent.putExtra(EXTRA_PROFILE, profile);
         context.startActivity(profileIntent);
     }
 
