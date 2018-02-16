@@ -1,7 +1,7 @@
-package com.stablekernel.interview.api;
+package com.stablekernel.interview.common.api;
 
-import com.stablekernel.interview.api.model.LoginCredentials;
-import com.stablekernel.interview.api.model.TokenResponse;
+import com.stablekernel.interview.login.api.model.LoginCredentials;
+import com.stablekernel.interview.login.api.model.TokenResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

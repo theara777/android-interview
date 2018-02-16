@@ -1,18 +1,17 @@
-package com.stablekernel.interview.ui.profile;
+package com.stablekernel.interview.profile.ui
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
 
-import com.stablekernel.interview.R;
-import com.stablekernel.interview.api.model.Profile;
+import com.stablekernel.interview.R
+import com.stablekernel.interview.profile.api.model.Profile
 
 /*
     After you have shown ProfileFragment, your app will crash.  Need to accomplish a few tasks here.
@@ -33,34 +32,25 @@ import com.stablekernel.interview.api.model.Profile;
  */
 
 
-public final class ProfileFragment extends Fragment {
+class ProfileFragment : Fragment() {
 
-    public static final String TAG = ProfileFragment.class.getSimpleName();
+    private val nameTextView: TextView? = null
+    private val progressTextView: TextView? = null
+    private val skillsRecyclerView: RecyclerView? = null
 
-    private TextView nameTextView;
-    private TextView progressTextView;
-    private RecyclerView skillsRecyclerView;
-
-    public static ProfileFragment newInstance(Profile profile) {
-        // TODO: implement me
-        return null;
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // TODO: inflate the layout fragment_profile.xml and return the resulting view
-        return null;
+        return null
     }
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        Log.d(TAG, "onViewCreated() called with: view = [" + view + "], savedInstanceState = [" + savedInstanceState + "]");
-        super.onViewCreated(view, savedInstanceState);
+    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+        Log.d(TAG, "onViewCreated() called with: view = [$view], savedInstanceState = [$savedInstanceState]")
+        super.onViewCreated(view, savedInstanceState)
 
         // TODO: this fragment requires a valid instance of Profile
-        Profile profile = null;
+        val profile: Profile? = null
 
+        /*
         nameTextView = (TextView) view.findViewById(R.id.profile_name_textView);
         progressTextView = (TextView) view.findViewById(R.id.profile_progress_textView);
         skillsRecyclerView = (RecyclerView) view.findViewById(R.id.profile_skills_recyclerView);
@@ -70,7 +60,18 @@ public final class ProfileFragment extends Fragment {
         progressTextView.setText(Double.toString(profile.getProgress()));
 
         skillsRecyclerView.setAdapter(new SkillRecyclerViewAdapter(profile.getSkills()));
+        */
 
         // TODO: set the title to something fun
+    }
+
+    companion object {
+
+        val TAG = ProfileFragment::class.java.simpleName
+
+        fun newInstance(profile: Profile): ProfileFragment? {
+            // TODO: implement me
+            return null
+        }
     }
 }

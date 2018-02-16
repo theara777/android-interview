@@ -4,7 +4,7 @@
           xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name=".InterviewApplication"
+        android:name=".common.InterviewApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.stablekernel.interview.ui.login.LoginActivity">
+        <activity android:name="com.stablekernel.interview.login.ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.stablekernel.interview.ui.profile.ProfileActivity"/>
+        <activity android:name="com.stablekernel.interview.profile.ui.ProfileActivity"/>
 
     </application>
 
